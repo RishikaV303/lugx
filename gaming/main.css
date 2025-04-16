@@ -1,0 +1,623 @@
+@media only screen and (max-width:1256px) {
+    nav .nav .nav-wrapper ul {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:1177px) {
+    nav .nav .nav-wrapper ul {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:1025px) {
+    nav .nav .nav-wrapper {
+        width: 90%;
+    }
+    header {
+        height: 170vh;
+    }
+    header .header .wrapper {
+        width: 90%;
+    }
+    header #feature .wrapper {
+        width: 90%;
+    }
+    header .header .wrapper .right-content .banner-image{
+        width: 80%;
+        height: 80%;
+    }
+    header .header .wrapper .right-content .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+    header .header .wrapper .right-content .offer {
+        left: 50px;
+    }
+    #trending .wrapper {
+        width: 90%;;
+    }
+    #trending .wrapper .trend-cards .trending {
+        width: 24%;
+        height: 70%;
+    }
+    #trending .wrapper .trend-cards .trending .trend-image{
+        height: 200px;
+    }
+    #trending .wrapper .trend-cards .trending .trend-image a img {
+        height: 100%;
+    }
+    #trending .wrapper .trend-cards .trending .trend-image h3{
+        top: 20px;
+    }
+    #top-games .wrapper {
+        width: 90%;
+    }
+    #top-games .wrapper .top-cards .top-played {
+        width: 16%;
+        height: 65%;
+    }
+    #top-games .wrapper .top-cards .top-played .content {
+        height: 50%;
+    }
+    #categories .wrapper {
+        width: 90%;
+    }
+    #categories .wrapper .cat-cards {
+        width: 19%;
+        height: 60%;
+    }
+    #shop {
+        width: 100%;
+        height: 150vh;
+    }
+    #shop .wrap {
+        width: 90%;
+        background-size: 600px;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    nav {
+        width: 100%;
+        height: 15vh;
+    }
+    nav .nav .nav-wrapper {
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .nav .nav-wrapper .menu_icon {
+        width: 55px;
+        height: 40px;
+        display: block;
+        font-size: 50px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    nav .nav .nav-wrapper ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+        position: absolute;
+        top: -450%;
+        left: 0;
+        background-color: #a19696;
+        color: black;
+        width: 85%;
+        height: 350px;
+        text-align: center;
+        padding: 10px 0;
+        transition: 1s ease-in-out;
+    }
+    #check:checked~ul {
+        top: 100%;
+    }
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    header .header {
+        height: 1750px;
+    }
+    header .header .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    header .header .wrapper .left-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    header .header .wrapper .left-content form {
+        width: 99%;
+        height: 50px;
+    }
+
+    header .header .wrapper .left-content form .button {
+        height: 60px;
+    }
+
+    header .header .wrapper .right-content {
+        width: 100%;
+        height: auto;
+    }
+
+    header .header .wrapper .right-content .banner-image {
+
+        width: 100%;
+        height: 100%;
+    }
+
+    header .header .wrapper .right-content .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header #feature {
+        width: 100%;
+        height: 70vh;
+    }
+    header #feature .wrapper {
+        height: 80%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    header #feature a {
+        width: 40%;
+        height: 50%;
+    }
+    #trending {
+        width: 100%;
+        height: 150vh;
+    }
+    #trending .wrapper {
+        height: 80%;
+    }
+    #trending .wrapper .trend-cards {
+        width: 99%;
+        height: 80%;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #trending .wrapper .trend-cards .trending {
+        width: 40%;
+        height: 50%;
+    }
+    #top-games {
+        width: 100%;
+        height: auto;
+    }
+    #top-games .wrapper {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+    }
+    #top-games .wrapper .top-cards {
+        width: 99%;
+        height: 80%;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #top-games .wrapper .top-cards .top-played {
+        width: 40%;
+        height: 80%;
+        
+    }
+    #top-games .wrapper .top-cards .top-played .content {
+        width: 100%;
+        height: 30%;
+    }
+
+    #top-games .wrapper .heading button {
+        display: none;
+    }
+    #categories {
+        width: 100%;
+        height: auto;
+    }
+    #categories .wrapper {
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #categories .wrapper .cat-card {
+        width: 99%;
+        height: 80%;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+    #categories .wrapper .cat-cards {
+        width: 40%;
+        height: 28%;
+    }
+    #categories .wrapper .cat-cards .cat-card-image{
+        width: 100%;
+        height: 250px;
+    
+    }
+    #shop .wrap {
+        height: 180vh;
+       background: transparent;
+    }
+    #shop .wrap .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    #shop .wrap .shop-now {
+        width: 90%;
+        height: 40%;
+    }
+    #shop .wrap .shop-now .wrapper {
+        width: 60%;
+        height: 70%;
+    }
+    #shop .wrap .subscribe-now {
+        width: 90%;
+        height: 25%;
+    }
+    #shop .wrap .subscribe-now .wrapper {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width:426px) {
+
+    /* nav {
+        width: 100%;
+        height: 10vh;
+    } */
+    nav .nav .nav-wrapper .logo {
+        width: 30%;
+        height: 50%;
+    }
+
+    nav .nav .nav-wrapper ul {
+        width: 100%;
+        height: 450px;
+    }
+    header {
+        width: 100%;
+        height: 330vh;
+    }
+
+    header .header {
+        height: 100%;
+        display: flex;
+        align-items: start;
+    }
+
+    header .header .wrapper {
+        width: 100%;
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+    }
+
+    header .header .wrapper .left-content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .header .wrapper .left-content p {
+        width: 95%;
+    }
+
+    header .header .wrapper .left-content form {
+        width: 100%;
+        height: 40px;
+    }
+
+    header .header .wrapper .right-content {
+        width: 90%;
+        height: auto;
+
+    }
+
+    header .header .wrapper .right-content .offer {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    header .header .wrapper .right-content .banner-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    header .header .wrapper .right-content .banner-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    header #feature {
+        width: 100%;
+        height: 140vh !important;
+        /* height: auto; */
+        /* background-color: crimson; */
+    }
+
+    header #feature .wrapper {
+        width: 100%;
+        height: 130vh !important;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        /* background-color: cadetblue; */
+    }
+
+    header #feature .wrapper a {
+        width: 95%;
+    }
+
+    header #feature a .cards {
+        width: 10;
+        height: 90%;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 10px rgba(183, 73, 73, 0.5);
+    }
+
+    /* trending section */
+    #trending {
+        height: auto;
+    }
+
+    #trending .wrapper {
+        width: 85%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #trending .wrapper .trend-head {
+        width: 100%;
+        height: 10%;
+
+    }
+
+    #trending .wrapper .heading button {
+        display: none;
+    }
+
+    #trending .wrapper .trend-cards {
+        height: 250vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    #trending .wrapper .trend-cards .trending {
+        width: 90%;
+        height: 350px;
+    }
+
+    #trending .wrapper .trend-cards .trending .trend-image h3 {
+        display: none;
+    }
+
+    /* top games  */
+    #top-games {
+        width: 100%;
+        height: auto;
+    }
+
+    #top-games .wrapper {
+        width: 99%;
+        height: 90%;
+    }
+
+    #top-games .wrapper h3 {
+        text-align: center;
+    }
+
+    #top-games .wrapper .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top-games .wrapper .heading button {
+        display: none;
+    }
+
+    #top-games .wrapper .top-cards {
+        height: 500vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    #top-games .wrapper .top-cards .top-played {
+        width: 90%;
+        height: 460px;
+    }
+    #top-games .wrapper .top-cards .top-played .top-image{
+        height: 380px;
+    }
+    #top-games .wrapper .top-cards .top-played .content{
+        width: 90%;
+        height: 20%;
+    }
+
+    #categories {
+        width: 100%;
+        height: auto;
+    }
+
+    #categories .wrapper {
+        width: 90%;
+        /* height: 100%; */
+    }
+
+    #categories .wrapper .cat-card {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-around;
+    }
+
+    #categories .wrapper .cat-cards {
+        width: 100%;
+        height: 370px;
+    }
+
+    #categories .wrapper .cat-cards .cat-card-image {
+        width: 100%;
+        height: 310px;
+    }
+
+    #categories .wrapper .cat-cards .cat-card-image img {
+        width: 100%;
+        height: 100%;
+    }
+    /* shop section */
+    #shop {
+        height: auto;
+    }
+
+    #shop .wrap {
+        width: 90%;
+        height: auto;
+        background: transparent;
+
+    }
+
+    #shop .wrap .wrapper {
+        height: 190vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #shop .wrap .shop-now {
+        width: 100%;
+        height: 530px;
+    }
+
+    #shop .wrap .shop-now .wrapper {
+        width: 90%;
+    }
+
+    #shop .wrap .subscribe-now {
+        width: 100%;
+        height: 500px;
+    }
+
+    #shop .wrap .subscribe-now .wrapper {
+        width: 90%;
+    }
+    #shop .wrap .subscribe-now .wrapper form {
+        height: 110px;
+        flex-direction: column;
+        background-color: transparent;
+
+    }
+    #shop .wrap .subscribe-now .wrapper form .button {
+        width: 90%;
+    }
+
+    /* footer */
+    footer {
+        width: 100%;
+        height: 30vh;
+    }
+
+    footer .wrapper {
+        width: 99%;
+        height: 100%;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 100px 100px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .wrapper p {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:376px){
+    header .header .wrapper {
+        width: 90%;
+    }
+    #trending .wrapper .trend-cards .trending {
+        width: 100%;
+        height: 310px;
+    }
+    #shop .wrap .shop-now {
+        width: 100%;
+        height: 640px;
+    }
+  
+}
+@media only screen and (max-width:321px){
+    #trending .wrapper .trend-cards .trending {
+        width: 100%;
+        height: 290px;
+    }
+    nav .nav .nav-wrapper .logo {
+        width: 40%;
+        height: 50%;
+    }
+    #categories .wrapper .cat-cards .cat-card-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    #categories .wrapper .cat-cards .cat-card-image img {
+        width: 100%;
+        height: 100%;
+    }
+}

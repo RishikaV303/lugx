@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-primary: "Poppins", sans-serif;
+    --primary-color: #26025c;
+    --secondary-color: #EE626B;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: var(--font-primary);
+}
+
+nav {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+nav .nav {
+    width: 99%;
+    height: 100%;
+    background-color: var(--primary-color);
+    /* border-radius: 0px 0px 100px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav .nav-wrapper {
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav .nav-wrapper .logo {
+    width: 15%;
+    height: 70%;
+}
+
+nav .nav .nav-wrapper .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .nav-wrapper .menu_icon {
+    display: none;
+}
+
+nav .nav-wrapper input {
+    display: none;
+}
+
+nav .nav .nav-wrapper ul {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+
+}
+
+/* nav .nav .nav-wrapper ul li .active a:active{
+    
+    background-color: #b797e0;
+} */
+nav .nav .nav-wrapper ul .active {
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: #b797e0;
+}
+
+nav .nav .nav-wrapper ul li {
+    list-style: none;
+}
+
+nav .nav .nav-wrapper ul li {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px 15px;
+    border-radius: 2px;
+}
+
+nav .nav .nav-wrapper ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav .nav-wrapper ul button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav .nav .nav-wrapper ul li:hover {
+    padding: 15px 15px;
+    border-radius: 30px;
+    background-color: #b797e0;
+}
+
+
+header {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header {
+    width: 99%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 0px 0px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header .wrapper {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+header .header .wrapper .left-content {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 50px;
+    color: white;
+}
+
+header .header .wrapper .left-content .heading h1 {
+    font-size: 48px;
+}
+
+header .header .wrapper .left-content .heading h3 {
+    font-size: 20px;
+}
+
+header .header .wrapper .left-content p {
+    font-size: 14px;
+}
+
+header .header .wrapper .left-content form input {
+    width: 40%;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+header .header .wrapper .left-content form {
+    width: 79%;
+    height: 40px;
+    background-color: white;
+    padding: 5px 0px 5px 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header .wrapper .left-content form .textbox {
+    width: 54%;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+header .header .wrapper .left-content form .button {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+header .header .wrapper .left-content form .button:hover {
+    background-color: var(--primary-color);
+}
+
+header .header .wrapper .right-content {
+    /* width: 50%;
+    height: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+
+header .header .wrapper .right-content .banner-image img {
+    border-radius: 30px;
+}
+
+header .header .wrapper .right-content .offer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--secondary-color);
+    color: white;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+
+header .header .wrapper .right-content .price {
+    width: 18%;
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    top: 15px;
+}
+
+/* feature cards */
+header #feature {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -70px;
+
+}
+
+header #feature .wrapper {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #feature a {
+    width: 23%;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+header #feature a .cards {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px rgba(17, 17, 17, 0.5);
+}
+
+header #feature a .cards .card-img {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #feature a:hover .card-img {
+    background-color: var(--secondary-color);
+}
+
+header #feature a .cards h2 {
+    font-size: 17px;
+}
+
+/* section one trending */
+#trending {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#trending .wrapper {
+    width: 85%;
+    height: 80%;
+}
+
+#trending .wrapper .trend-head{
+    width: 100%;
+    height: 20%;
+}
+#trending .wrapper .trend-head h3 {
+    color: var(--secondary-color);
+}
+
+#trending .wrapper .trend-head .heading {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#trending .wrapper .trend-head .heading h1 {
+    font-size: 36px;
+}
+
+#trending .wrapper .trend-head .heading button {
+    background-color: var(--secondary-color);
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+#trending .wrapper .trend-head .heading button:hover {
+    background-color: var(--primary-color);
+}
+
+#trending .wrapper .trend-cards {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#trending .wrapper .trend-cards .trending {
+    width: 23%;
+    height: 70%;
+    background-color: rgb(224, 221, 221);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#trending .wrapper .trend-cards .trending:hover .sub-heading .icon {
+    background-color: var(--primary-color);
+}
+
+#trending .wrapper .trend-cards .trending:hover .sub-heading .content h3 {
+    color: var(--primary-color);
+}
+
+#trending .wrapper .trend-cards .trending .trend-image a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#trending .wrapper .trend-cards .trending .trend-image h3{
+    /* width: 70px;
+    height: 50px; */
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+
+}
+
+#trending .wrapper .trend-cards .trending .sub-heading {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#trending .wrapper .trend-cards .trending .sub-heading .icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#trending .wrapper .trend-cards .trending .sub-heading .content p {
+    color: rgb(153, 150, 150);
+    font-size: 14px;
+}
+
+#trending .wrapper .trend-cards .trending .sub-heading .content h3 {
+    color: #1e1e1e;
+    font-size: 17px;
+}
+
+#trending .wrapper .trend-cards .trending .sub-heading .icon a {
+    color: white;
+
+}
+
+/* top games */
+#top-games {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top-games .wrap {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    border-radius: 100px;
+}
+
+#top-games .wrapper {
+    width: 85%;
+    height: 80%;
+
+}
+
+#top-games .wrapper h3 {
+    color: var(--secondary-color);
+}
+
+#top-games .wrapper .heading {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-games .wrapper .heading h1 {
+    font-size: 36px;
+}
+
+#top-games .wrapper .heading button {
+    background-color: var(--secondary-color);
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+#top-games .wrapper .heading button:hover {
+    background-color: var(--primary-color);
+}
+
+#top-games .wrapper .top-cards {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top-games .wrapper .top-cards .top-played {
+    width: 15%;
+    height: 64%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+   
+    
+}
+
+#top-games .wrapper .top-cards .top-played .top-image a img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#top-games .wrapper .top-cards .top-played .content {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#top-games .wrapper .top-cards .top-played .content h3 {
+    color: black;
+    text-align: center;
+}
+
+#top-games .wrapper .top-cards .top-played .content a button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+#top-games .wrapper .top-cards .top-played:hover .content h3 {
+    color: var(--primary-color);
+}
+
+#top-games .wrapper .top-cards .top-played:hover .content a button {
+    background-color: var(--primary-color);
+}
+
+/* categories */
+#categories {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categories .wrapper {
+    width: 85%;
+    height: 80%;
+}
+
+#categories .wrapper .heading {
+    text-align: center;
+}
+
+#categories .wrapper .heading h3 {
+    font-size: 15px;
+    color: var(--secondary-color);
+}
+
+#categories .wrapper .heading h1 {
+    font-size: 36px;
+
+}
+
+#categories .wrapper .cat-card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#categories .wrapper .cat-cards {
+    width: auto;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+#categories .wrapper .cat-cards h3 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categories .wrapper .cat-cards .cat-card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+/* our shop */
+#shop {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop .wrap {
+    width: 85%;
+    height: 80%;
+    background: url("./images/final2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+}
+
+#shop .wrap .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+#shop .wrap .shop-now {
+    width: 40%;
+    height: 90%;
+    background-color: rgb(244, 243, 243);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop .wrap .shop-now .wrapper {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#shop .wrap .shop-now .wrapper .heading {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shop .wrap .shop-now .wrapper .heading h3 {
+    font-size: 15px;
+    color: var(--secondary-color);
+
+}
+
+#shop .wrap .shop-now .wrapper .heading h1 {
+    font-size: 36px;
+}
+
+#shop .wrap .shop-now .wrapper .heading h1 span {
+    color: var(--primary-color);
+}
+
+#shop .wrap .shop-now .wrapper p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#shop .wrap .shop-now .wrapper a button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+#shop .wrap .shop-now .wrapper a button:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+
+#shop .wrap .subscribe-now {
+    width: 40%;
+    height: 70%;
+    background-color: rgb(244, 243, 243);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop .wrap .subscribe-now .wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#shop .wrap .subscribe-now .wrapper .heading {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shop .wrap .subscribe-now .wrapper .heading h3 {
+    font-size: 15px;
+    color: var(--secondary-color);
+
+}
+
+#shop .wrap .subscribe-now .wrapper .heading h1 {
+    font-size: 36px;
+}
+
+#shop .wrap .subscribe-now .wrapper .heading h1 span {
+    color: var(--primary-color);
+}
+
+#shop .wrap .subscribe-now .wrapper p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#shop .wrap .subscribe-now .wrapper form {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 5px 1px 5px 3px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#shop .wrap .subscribe-now .wrapper form input {
+    width: 40%;
+    height: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#shop .wrap .subscribe-now .wrapper form .mail {
+    width: 80%;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#shop .wrap .subscribe-now .wrapper form .button {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50px;
+    border: none;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+#shop .wrap .subscribe-now .wrapper form .button:hover {
+    background-color: var(--primary-color);
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer .wrapper {
+    width: 99%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    border-radius: 500px 500px 0px 0px;
+}
+
+footer .wrapper p {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wrapper p a {
+    text-decoration: none;
+    color: white;
+}
